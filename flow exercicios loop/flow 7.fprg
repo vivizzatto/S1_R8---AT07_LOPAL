@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow 7"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 09:59:39 "/>
+        <attribute name="created" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNzsiMDk6MTM6NTkgIjsyMzQ1"/>
+        <attribute name="edited" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNzsiMDk6NTk6MzkgIjsyOzI0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Para este exerc&#237;cio, o WHILE pode ser a melhor op&#231;&#227;o da mesma forma que no EX. 5, j&#225; que estamos pedindo o valor das variaveis para o usu&#225;rio."/>
+            <declare name="i, prim, ult, inc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro valor da contagem: &quot;" newline="True"/>
+            <input variable="prim"/>
+            <output expression="&quot;Digite o &#250;ltimo valor da contagem: &quot;" newline="True"/>
+            <input variable="ult"/>
+            <output expression="&quot;Digite o valor que vai ser o incremento: &quot;" newline="True"/>
+            <input variable="inc"/>
+            <output expression="&quot;Exerc&#237;cio 7: Com FOR.&quot;" newline="True"/>
+            <if expression="prim &lt; ult">
+                <then>
+                    <for variable="i" start="prim" end="ult" direction="inc" step="inc">
+                        <output expression="&quot;N&#250;mero: &quot; &amp;i" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="prim" end="ult" direction="dec" step="inc">
+                        <output expression="&quot;N&#250;mero: &quot; &amp;i" newline="True"/>
+                    </for>
+                </else>
+            </if>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

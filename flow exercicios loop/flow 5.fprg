@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow 5"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 10:00:25 "/>
+        <attribute name="created" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNjsiMTA6NTQ6MDEgIjsyMzI4"/>
+        <attribute name="edited" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNzsiMTA6MDA6MjUgIjsyOzI0MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Para este exerc&#237;cio, o WHILE pode ser a melhor op&#231;&#227;o, j&#225; que ao fazer o c&#243;digo n&#227;o sabemos qual ser&#225; o valor final que o usu&#225;rio ir&#225; digitar, ent&#227;o n&#227;o &#233; bem definido como normalmente desejado no FOR."/>
+            <declare name="i, contFor, contWhile, contDo" type="Integer" array="False" size=""/>
+            <assign variable="contFor" expression="1"/>
+            <assign variable="contWhile" expression="1"/>
+            <assign variable="contDo" expression="1"/>
+            <output expression="&quot;Digite um n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;Exercicio 5: Com For&quot;" newline="True"/>
+            <for variable="contFor" start="1" end="i" direction="inc" step="1">
+                <output expression="&quot;N&#250;mero: &quot; &amp;contFor" newline="True"/>
+            </for>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+            <output expression="&quot;Exercicio 5: Com While!&quot;" newline="True"/>
+            <while expression="contWhile &lt;= i">
+                <output expression="&quot;N&#250;mero: &quot; &amp;contWhile" newline="True"/>
+                <assign variable="contWhile" expression="contWhile + 1"/>
+            </while>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+            <output expression="&quot;Exercicio 5: Com do-while!&quot;" newline="True"/>
+            <do expression="contDo &lt;= i">
+                <output expression="&quot;N&#250;mero: &quot; &amp;contDo" newline="True"/>
+                <assign variable="contDo" expression="contDo + 1"/>
+            </do>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

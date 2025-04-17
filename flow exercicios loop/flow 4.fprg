@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow 4"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 10:00:42 "/>
+        <attribute name="created" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNjsiMTA6NDM6MDMgIjsyMzI4"/>
+        <attribute name="edited" value="REVTLU1IO1NONTEyLTEyNDI5ODg7MjAyNS0wNC0xNzsiMTA6MDA6NDIgIjsyOzI0MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Para este exerc&#237;cio, o la&#231;o de repeti&#231;&#227;o FOR foi o melhor."/>
+            <declare name="for, while, do" type="Integer" array="False" size=""/>
+            <assign variable="for" expression="50"/>
+            <assign variable="while" expression="50"/>
+            <assign variable="do" expression="50"/>
+            <output expression="&quot;Exercicio 4: Com For!&quot;" newline="True"/>
+            <for variable="for" start="50" end="0" direction="dec" step="5">
+                <output expression="&quot;N&#250;mero: &quot; &amp;for" newline="True"/>
+            </for>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+            <output expression="&quot;Exercicio 4: Com While!&quot;" newline="True"/>
+            <while expression="while &gt;= 0">
+                <output expression="&quot;N&#250;mero: &quot; &amp;while" newline="True"/>
+                <assign variable="while" expression="while - 5"/>
+            </while>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+            <output expression="&quot;Exercicio 4: Com do-while!&quot;" newline="True"/>
+            <do expression="do &gt;= 0">
+                <output expression="&quot;N&#250;mero: &quot; &amp;do" newline="True"/>
+                <assign variable="do" expression="do - 5"/>
+            </do>
+            <output expression="&quot;Fim!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
